@@ -34,7 +34,7 @@ jobs:
         env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           REPOSITORY: simplehttp
-          IMAGE_TAG: latest
+          IMAGE_TAG: 066254782570.dkr.ecr.us-east-1.amazonaws.com/simplehttp:latest
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
