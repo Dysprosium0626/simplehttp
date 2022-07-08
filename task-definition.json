@@ -1,0 +1,43 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:066254782570:task-definition/httpsimple-ec2:5",
+    "containerDefinitions": [
+        {
+            "name": "simplehttp",
+            "image": "/:544d1e4f192f22b20189320cc06a45bb51acd66c",
+            "cpu": 0,
+            "memory": 128,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 0,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "httpsimple-ec2",
+    "taskRoleArn": "arn:aws:iam::066254782570:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::066254782570:role/ecsTaskExecutionRole",
+    "revision": 5,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EXTERNAL",
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "registeredAt": "2022-07-07T19:00:48.778000+08:00",
+    "registeredBy": "arn:aws:iam::066254782570:user/ECS-User"
+}
